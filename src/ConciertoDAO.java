@@ -86,7 +86,7 @@ public class ConciertoDAO {
 
     // necesitamos buscarporid para  la entrada de los conciertos
     public Concierto buscarPorId(int idBuscar) {
-        Concierto concierto = null;
+        Concierto concierto = null; // se pone =null a la variable tipo concierto porque si no java daria error al intentar usar una variable que no esta inicializada a mingun valor
 
         try {
             String sql = "SELECT * FROM CONCIERTO WHERE ID = ?";
